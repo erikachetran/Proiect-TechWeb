@@ -10,9 +10,9 @@
 
 .registerForm > input {
   height: 3vh;
-  width: 16vw;
-  border-radius: 20px;
-  background-color: #b2dfdb; /* Pastel Green */
+  width: 20vw;
+  border-radius: 10px;
+  background-color: #f3f3f3;
 }
 
 .registerForm > label {
@@ -24,7 +24,12 @@
   font-weight: bold;
   color: #000000; /* Black */
   font-size: 4vh;
-  margin-top: 1vh;
+  margin-top: 5vh;
+}
+
+.registerBtnContainer {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
 }
 
 .registerContainer {
@@ -38,12 +43,12 @@
   font-size: 3vh;
   border: 3px solid #e0e0e0; /* Light Grey */
   color: #000000; /* Black */
+  box-shadow: 0 0 20px rgba(178, 223, 219, 0.8); /* Add a pastel green glow */
 }
 
 .registerForm {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 2vh;
 }
 
@@ -70,7 +75,7 @@
 
 @media only screen and (max-width: 1024px) {
   .registerContainer {
-    width: 80vw;
+    width: 60vw;
     height: 80vh;
     font-size: 3vh;
   }

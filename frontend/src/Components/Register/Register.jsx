@@ -44,7 +44,7 @@ function Register() {
   return (
     <div className="registerPage">
       <div className="registerContainer">
-        <div className="registerTitle">Register</div>
+        <div className="registerTitle">Înregistrează-te ca:</div>
         <form className="registerForm" onSubmit={handleRegister}>
           <div className="switch-container">
             <label className="switch">
@@ -59,7 +59,7 @@ function Register() {
               {isProfessor ? "Professor" : "Student"}
             </span>
           </div>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">Nume</label>
           <input
             type="text"
             id="name"
@@ -71,28 +71,30 @@ function Register() {
             id="email"
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Parola</label>
           <input
             type="password"
             id="password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <label htmlFor="repeatpassword">Repeat password</label>
+          <label htmlFor="repeatpassword">Repetă parola</label>
           <input
             type="password"
             id="repeatpassword"
             onChange={(e) => setRepeatPassword(e.target.value)}
           />
-          <button type="submit" className="registerBtn">
-            Register
-          </button>
-          <button
-            type="submit"
-            className="loginBtn"
-            onClick={() => navigate("/login")}
-          >
-            Go to login
-          </button>
+          <div class="registerBtnContainer">
+            <button type="submit" className="registerBtn">
+              Înregistrează-te
+            </button>
+            <button
+              type="submit"
+              className="registerBtn"
+              onClick={() => navigate("/login")}
+            >
+              Pagina de autentificare
+            </button>
+          </div>
         </form>
       </div>
     </div>

@@ -188,7 +188,7 @@ function HomepageProf({ onLoginSuccess }) {
             name="endTime"
             onChange={(e) => handleChange(2, e.target.value)}
           />
-          <button onClick={createSession}>Create Session</button>
+          <button onClick={createSession}>Creare Sesiune</button>
         </div>
       </div>
       <div className="homeDetails">
@@ -198,7 +198,7 @@ function HomepageProf({ onLoginSuccess }) {
         </button>
       </div>
       <div className="homeButtons">
-        <div className="phaseProf">Selectare Sesiune</div>
+        <div className="phaseProf"> Sesiuni: </div>
         <div className="phaseProf">Pre-cereri</div>
         <div className="phaseProf">Cereri Principale</div>
       </div>
