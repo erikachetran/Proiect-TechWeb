@@ -1,6 +1,6 @@
 import toast, { Toaster } from "react-hot-toast";
 import { Outlet, useNavigate } from "react-router-dom";
-import "./Navigation.css";
+import "./Navbar.css";
 
 function Navigation() {
   const navigate = useNavigate();

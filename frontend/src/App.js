@@ -3,7 +3,7 @@ import { Navigate, Route, RouterProvider, createBrowserRouter, createRoutesFromE
 import Homepage from './Components/Homepage/Homepage';
 import HomepageProf from './Components/HomepageProf/HomepageProf';
 import Login from './Components/Login/Login';
-import Navigation from './Components/Navigation/Navigation';
+import Navigation from './Components/Navbar/Navbar';
 import Register from './Components/Register/Register';
 
 function App() {
