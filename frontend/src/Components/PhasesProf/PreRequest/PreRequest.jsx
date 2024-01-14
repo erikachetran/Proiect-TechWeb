@@ -12,7 +12,7 @@ function PreRequest({
   const [justification, setJustification] = useState("");
 
   const handleClickSession = (action) => {
-    if (status === "accepted")
+    if (status == "accepted")
       document.getElementById("phaseMain").style.display = "block";
     onClick(preRequestId, studentId, action, justification, status);
   };
@@ -30,8 +30,8 @@ function PreRequest({
       }}
       onClick={handleClickSession}
     >
-      <div className="studentName">Numele studentului: {studentName}</div>
-      <div className="prereqTitle">Numele disertatiei: {prereqTitle}</div>
+      <div className="studentName">Nume student: {studentName}</div>
+      <div className="prereqTitle">Nume disertatie: {prereqTitle}</div>
       {status === "pending" ? (
         <div className="pendingControls">
           <div className="acceptanceButtons">
@@ -48,7 +48,6 @@ function PreRequest({
             className="prereqJustification"
             value={justification}
             onChange={(e) => setJustification(e.target.value)}
-            placeholder="Introduceți justificarea dumneavoastră "
           />
         </div>
       ) : status === "accepted" ? (

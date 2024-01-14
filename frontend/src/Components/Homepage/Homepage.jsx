@@ -9,9 +9,7 @@ function Homepage({ onLoginSuccess }) {
 
   return (
     <div className="homeContainer">
-      {/* Estetizat homeDetails */}
       <div className="homeDetails">Bine ai venit!</div>
-      {/* Estetizat homeButtons */}
       <div className="homeButtons">
         <div
           className="phaseOne phase"

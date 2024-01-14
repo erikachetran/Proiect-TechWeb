@@ -84,7 +84,8 @@ function PhaseOne() {
     <div>
       {isAccepted ? (
         <div>
-          You were accepted! Upload the request for your teacher to evaluate
+          Ai fost acceptat! Încarcă cererea pentru ca profesorul tău să o
+          evalueze
         </div>
       ) : (
         <div className="phaseOneContainer">
@@ -102,9 +103,9 @@ function PhaseOne() {
           >
             {professors.map((professor) => (
               <option key={professor.sessionId} value={professor.sessionId}>
-                {"Session " +
+                {"Sesiune " +
                   professor.sessionId +
-                  " Professor " +
+                  " Profesor " +
                   professor.Professor.name}
               </option>
             ))}

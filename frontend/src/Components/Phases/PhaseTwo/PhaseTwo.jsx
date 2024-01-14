@@ -102,39 +102,39 @@ function PhaseTwo() {
     <div>
       {isMainReqAccepted?.status === "accepted" ? (
         <div>
-          Your teacher accepted your Request Paper! You can download it when its
-          signed.
+          Profesorul a acceptat cererea ta! O poți descărca atunci când este
+          semnată
         </div>
       ) : isMainReqAccepted?.studentFileUpload !== null &&
         isMainReqAccepted?.status === "pending" ? (
         <div>
-          You already sent the request. Now wait for the professor to review it
+          Ai trimis deja cererea. Acum așteaptă ca profesorul să o revizuiască.{" "}
         </div>
       ) : (
         <div className="phaseTwoContainer">
           {!isAccepted ? (
-            <div>No professor accepted your request.</div>
+            <div>Niciun profesor nu a acceptat cererea ta</div>
           ) : (
             <div className="phaseTwoWrapper">
-              <div className="text">{`Congratulations, you were accepted at session ${acceptedSession}`}</div>
+              <div className="text">{`Felicitări, ai fost acceptat(ă) la sesiunea ${acceptedSession}`}</div>
               <div className="text">
-                Upload the Request paper! Your teacher will notify you if it is
-                accepted or rejected
+                "Încarcă documentul cererii! Profesorul tău te va notifica dacă
+                este acceptat sau respins.
               </div>
               <div className="text">
-                If the request is rejected, you can upload again.
+                Dacă cererea este respinsă, poți încărca din nou.
               </div>
 
               <div className="thesisDrop">
                 <section>
                   <div className="uploadArea" {...getRootProps()}>
                     <input {...getInputProps()} />
-                    <span>Click or Drag here</span>
+                    <span>Apasă sau Trage aici</span>
                   </div>
                 </section>
               </div>
 
-              <button onClick={handleSubmit}>Submit</button>
+              <button onClick={handleSubmit}>Trimite</button>
             </div>
           )}
         </div>

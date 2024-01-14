@@ -58,7 +58,7 @@
 }
 
 .phaseProf {
-  width: 33vw;
+  width: 100%;
   height: 6vh;
   display: flex;
   justify-content: center;
