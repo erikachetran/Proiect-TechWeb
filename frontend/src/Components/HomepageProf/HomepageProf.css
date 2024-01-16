@@ -41,24 +41,20 @@
 }
 
 .createSessionBtn {
-  background-color: #ffffff; /* White */
+  background-color: whitesmoke;
   height: 4vh;
   width: 10vw;
   border: none;
-  color: #000000; /* Black */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  padding: 5px 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .createSessionBtn:hover {
   transform: translateY(-0.5vh);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  z-index: 1;
 }
 
 .phaseProf {
-  width: 100%;
+  width: 33vw;
   height: 6vh;
   display: flex;
   justify-content: center;
@@ -66,11 +62,14 @@
 }
 
 .phaseProf:hover {
-  background-color: #75ac9e; /* Change to your desired hover color */
+  background-color: #75ac9e;
   cursor: pointer;
 }
 
-#phasePre,
+#phasePre {
+  display: none;
+}
+
 #phaseMain {
   display: none;
   overflow-y: none;

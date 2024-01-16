@@ -30,8 +30,8 @@ function PreRequest({
       }}
       onClick={handleClickSession}
     >
-      <div className="studentName">Nume student: {studentName}</div>
-      <div className="prereqTitle">Nume disertatie: {prereqTitle}</div>
+      <div className="studentName">Numele Studentului: {studentName}</div>
+      <div className="prereqTitle">Titlul : {prereqTitle}</div>
       {status === "pending" ? (
         <div className="pendingControls">
           <div className="acceptanceButtons">

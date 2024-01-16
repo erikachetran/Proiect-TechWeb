@@ -170,36 +170,36 @@ function HomepageProf({ onLoginSuccess }) {
     <div className="homeContainer">
       <div id="modalContainer" onClick={closeModalSession}>
         <div id="modalSession">
-          <label htmlFor="maxStud">Nr. maxim studenti:</label>
+          <label htmlFor="maxStud">Număr Maxim de Studenți</label>
           <input
             type="number"
             name="maxStud"
             onChange={(e) => handleChange(0, e.target.value)}
           />
-          <label htmlFor="startTime">Inceput sesiune:</label>
+          <label htmlFor="startTime">Începutul Sesiunii</label>
           <input
             type="datetime-local"
             name="startTime"
             onChange={(e) => handleChange(1, e.target.value)}
           />
-          <label htmlFor="endTime">Sfarsit sesiune:</label>
+          <label htmlFor="endTime">Sfârșitul Sesiunii</label>
           <input
             type="datetime-local"
             name="endTime"
             onChange={(e) => handleChange(2, e.target.value)}
           />
-          <button onClick={createSession}>Creare Sesiune</button>
+          <button onClick={createSession}>Creează Sesiune</button>
         </div>
       </div>
       <div className="homeDetails">
         Bine ai venit!
         <button className="createSessionBtn" onClick={openModalSession}>
-          Creare Sesiune
+        Creează Sesiune
         </button>
       </div>
       <div className="homeButtons">
-        <div className="phaseProf"> Sesiuni: </div>
-        <div className="phaseProf">Pre-cereri</div>
+        <div className="phaseProf">Selectează Sesiunea</div>
+        <div className="phaseProf">Cereri Preliminare</div>
         <div className="phaseProf">Cereri Principale</div>
       </div>
       <div className="homeProfPhases">

@@ -85,15 +85,16 @@ function PhaseOne() {
       {isAccepted ? (
         <div>
           Ai fost acceptat! Încarcă cererea pentru ca profesorul tău să o
-          evalueze
+          evalueze.
         </div>
       ) : (
         <div className="phaseOneContainer">
           <div className="textPhaseOne">
             <div>
-              Poti adresa cereri mai multor profesori, dar dacă ai fost aprobat
-              de unul dintre ei, nu mai poti fi aprobat de un al doilea
+              Alege unul sau mai mulți profesori din listă pentru a-i propune să
+              îți ofere îndrumare în realizarea tezei de disertatie.
             </div>
+            <div>Doar un profesor va putea să accepte!</div>
           </div>
           <select
             className="dropdownTeachers"
@@ -103,7 +104,7 @@ function PhaseOne() {
           >
             {professors.map((professor) => (
               <option key={professor.sessionId} value={professor.sessionId}>
-                {"Sesiune " +
+                {"Session " +
                   professor.sessionId +
                   " Profesor " +
                   professor.Professor.name}
@@ -111,7 +112,7 @@ function PhaseOne() {
             ))}
           </select>
           <div className="textPhaseOne">
-            Selectați un nume pentru disertatie
+            Selectează un nume pentru lucrarea ta.
           </div>
           <input
             className="dropdownTeachers"
@@ -120,7 +121,7 @@ function PhaseOne() {
             onChange={(e) => setTitle(e.target.value)}
           />
           <button className="submitBtn" onClick={handleSubmit}>
-            Trimiteți Alegerea
+            Trimite Alegerea
           </button>
         </div>
       )}

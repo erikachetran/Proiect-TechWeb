@@ -71,11 +71,9 @@ function PhaseThree() {
   return (
     <div className="phaseThreeContainer">
       {currentMainRequest && currentMainRequest?.status == "accepted" ? (
-        <button onClick={handleDownload}>Descarcă cererea semnată.</button>
+        <button onClick={handleDownload}>Descarcă Cererea semnată</button>
       ) : (
-        <div>
-          Nicio cerere nu a fost trimisă sau profesorul nu a acceptat-o.
-        </div>
+        <div>Nu ai trimis nicio cerere sau profesorul nu a acceptat-o.</div>
       )}
     </div>
   );

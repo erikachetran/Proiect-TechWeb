@@ -9,7 +9,9 @@ function Homepage({ onLoginSuccess }) {
 
   return (
     <div className="homeContainer">
+      {/* Estetizat homeDetails */}
       <div className="homeDetails">Bine ai venit!</div>
+      {/* Estetizat homeButtons */}
       <div className="homeButtons">
         <div
           className="phaseOne phase"
@@ -17,7 +19,7 @@ function Homepage({ onLoginSuccess }) {
             setActivePhase(1);
           }}
         >
-          Selectați Profesorul
+          Alege Profesor
         </div>
         <div
           className="phaseTwo phase"
@@ -25,7 +27,7 @@ function Homepage({ onLoginSuccess }) {
             setActivePhase(2);
           }}
         >
-          Încărcați Cererea
+          Cerere de Încărcare
         </div>
         <div
           className="phaseThree phase"
@@ -33,9 +35,10 @@ function Homepage({ onLoginSuccess }) {
             setActivePhase(3);
           }}
         >
-          Descarcă Cererea Aprobată
+          Cerere Aprobată
         </div>
       </div>
+      {/* Estetizat homePhases */}
       <div className="homePhases">
         {activePhase === 1 ? (
           <PhaseOne />

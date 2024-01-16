@@ -102,34 +102,34 @@ function PhaseTwo() {
     <div>
       {isMainReqAccepted?.status === "accepted" ? (
         <div>
-          Profesorul a acceptat cererea ta! O poți descărca atunci când este
-          semnată
+          Profesorul tău a acceptat Cererea ta! O poți descărca când este
+          semnată.
         </div>
       ) : isMainReqAccepted?.studentFileUpload !== null &&
         isMainReqAccepted?.status === "pending" ? (
         <div>
-          Ai trimis deja cererea. Acum așteaptă ca profesorul să o revizuiască.{" "}
+          Ai trimis deja cererea. Acum așteaptă ca profesorul să o revizuiască{" "}
         </div>
       ) : (
         <div className="phaseTwoContainer">
           {!isAccepted ? (
-            <div>Niciun profesor nu a acceptat cererea ta</div>
+            <div>Niciun profesor nu a acceptat cererea ta.</div>
           ) : (
             <div className="phaseTwoWrapper">
-              <div className="text">{`Felicitări, ai fost acceptat(ă) la sesiunea ${acceptedSession}`}</div>
+              <div className="text">{`Felicitări, ai fost acceptat la sesiunea ${acceptedSession}`}</div>
               <div className="text">
-                "Încarcă documentul cererii! Profesorul tău te va notifica dacă
-                este acceptat sau respins.
+                Încarcă documentul cu cererea! Profesorul te va notifica dacă
+                este acceptată sau respinsă.
               </div>
               <div className="text">
-                Dacă cererea este respinsă, poți încărca din nou.
+                Dacă cererea este respinsă, poți să o încarci din nou.
               </div>
 
               <div className="thesisDrop">
                 <section>
                   <div className="uploadArea" {...getRootProps()}>
                     <input {...getInputProps()} />
-                    <span>Apasă sau Trage aici</span>
+                    <span>Apasă sau Trage aici documentul</span>
                   </div>
                 </section>
               </div>
